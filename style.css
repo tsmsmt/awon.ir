@@ -327,8 +327,8 @@ article.active {
         z-index: 999;
         display: flex;
         justify-content: center;
-        overflow-x: auto;
-        white-space: nowrap;
+        /*overflow-x: auto;*/
+        white-space: wrap;
         align-items: center;
         background: #0000003b;
         backdrop-filter: url(#lg-dist) blur(3px);
@@ -343,13 +343,13 @@ article.active {
 
     .provider a {
         flex: 0 0 auto;
-        padding: 0.4rem 0.9rem;
+        padding: 0.2rem 0.6rem;
         border-radius: 20px;
         background: transparent;
         box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
         color: #0066cc;
         text-decoration: none;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         font-weight: 900;
         transition: background 0.5s, color 0.5s;
     }
