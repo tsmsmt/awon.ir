@@ -137,6 +137,7 @@ article p {
     -webkit-column-break-inside: avoid;
     box-decoration-break: clone;
     align-items: center;
+    line-height: 1.8;
 }
 
 article p img {
@@ -284,17 +285,6 @@ article.active {
 }
 
 /* More & less */
-.toggle-desc-btn {
-    background: none;
-    border: none;
-    color: #0066cc;
-    cursor: pointer;
-    padding: 0;
-    margin-left: 5px;
-    font-family: 900;
-    font-size: 0.8em;
-}
-
 #parseek .toggle-desc-btn,
 #shahrekhabar .toggle-desc-btn {
     display: none;
@@ -309,6 +299,7 @@ article.active {
     background: none;
     border: none;
     color: #8b0000;
+    /* color: #0066cc; */
     cursor: pointer;
     font-size: 0.9em;
     font-weight: 900;
@@ -327,15 +318,15 @@ article.active {
         z-index: 999;
         display: flex;
         justify-content: center;
-        /*overflow-x: auto;*/
+        overflow-x: auto;
         white-space: wrap;
         align-items: center;
-        background: #0000003b;
-        backdrop-filter: url(#lg-dist) blur(3px);
+        background: #00000059;
+        backdrop-filter: url(#lg-dist2) blur(3px);
         border-bottom: 1px solid #333;
         border-radius: 0;
-        padding: 8px 0 8px 0;
-        gap: 0.5rem;
+        padding: 8px 5px 8px 5px;
+        gap: 0.4rem;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         -webkit-overflow-scrolling: touch;
         scroll-padding-left: 3.2rem;
@@ -343,7 +334,7 @@ article.active {
 
     .provider a {
         flex: 0 0 auto;
-        padding: 0.2rem 0.6rem;
+        padding: 0.1rem 0.3rem;
         border-radius: 20px;
         background: transparent;
         box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -366,6 +357,9 @@ article.active {
     body {
         padding-top: 3.2rem;
     }
+    .toggle-desc-btn {
+        font-size: 1.5em;
+    }
 }
 
 @media (min-width: 769px) {
@@ -375,3 +369,67 @@ article.active {
 }
 
 /************************************/
+@media screen and (max-width: 1024px) {
+    article {
+        columns: 1 !important;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .articleA {
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.8rem;
+        border-bottom-width: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        -webkit-text-stroke: 0.5px black;
+    }
+
+    .articleA {
+        padding: 1rem 0.5rem;
+    }
+
+    .news-block {
+        padding: 0.4rem;
+    }
+
+    article p img {
+        width: 100%;
+    }
+
+    .toggle-desc-btn {
+        font-size: 1.2em;
+    }
+
+    .article-sidebar {
+        width: 220px;
+        padding: 60px 15px;
+    }
+
+    .menu-toggle {
+        top: 0.6rem;
+        left: 0.6rem;
+        width: 28px;
+        height: 20px;
+    }
+
+    .menu-toggle span {
+        height: 2px;
+    }
+}
