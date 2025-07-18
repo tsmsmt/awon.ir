@@ -316,17 +316,16 @@ article.active {
         right: 0;
         display: flex;
         flex-wrap: wrap;
-        /* 🔑 این خط باعث میشه چند خطی بشن */
         justify-content: center;
         align-items: center;
         padding: 8px 5px 8px 60px;
-        /* از سمت چپ فاصله برای همبرگر */
         gap: 0.4rem;
-        background: #00000059;
-        backdrop-filter: url(#lg-dist) blur(3px);
+        background: #0000002d;
+        backdrop-filter: url(#lg-dist2) blur(2px);
         border-bottom: 1px solid #333;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        z-index: 999;
+        z-index: 990;
+        border-radius: 0%;
     }
 
     .provider a {
@@ -335,7 +334,6 @@ article.active {
         padding: 0.2rem 0.5rem;
         border-radius: 20px;
         background: transparent;
-        backdrop-filter: url(#lg-dist2);
         box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.5), inset 5px 5px 10px rgba(0, 0, 0, 0.3);
         color: #0066cc;
         text-decoration: none;
@@ -356,7 +354,7 @@ article.active {
         top: 0.6rem;
         left: 0.6rem;
         right: auto;
-        z-index: 1000;
+        z-index: 100000;
     }
 
     body {
@@ -434,6 +432,7 @@ article.active {
         left: 0.6rem;
         width: 28px;
         height: 20px;
+        z-index: 1000000000000000;
     }
 
     .menu-toggle span {
