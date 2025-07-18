@@ -323,7 +323,7 @@ article.active {
         /* از سمت چپ فاصله برای همبرگر */
         gap: 0.4rem;
         background: #00000059;
-        backdrop-filter: blur(3px);
+        backdrop-filter: url(#lg-dist) blur(3px);
         border-bottom: 1px solid #333;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         z-index: 999;
@@ -335,6 +335,7 @@ article.active {
         padding: 0.2rem 0.5rem;
         border-radius: 20px;
         background: transparent;
+        backdrop-filter: url(#lg-dist2);
         box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.5), inset 5px 5px 10px rgba(0, 0, 0, 0.3);
         color: #0066cc;
         text-decoration: none;
