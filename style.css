@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     animation: opacity 1s ease-in;
+    background: url("./bg.png")
 }
 
 @keyframes opacity {
@@ -321,7 +322,7 @@ article.active {
         padding: 8px 5px 8px 60px;
         gap: 0.4rem;
         background: #0000002d;
-        backdrop-filter: url(#lg-dist2) blur(2px);
+        backdrop-filter: url(#lg-dist) blur(2px);
         border-bottom: 1px solid #333;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         z-index: 990;
@@ -439,3 +440,4 @@ article.active {
         height: 2px;
     }
 }
+
