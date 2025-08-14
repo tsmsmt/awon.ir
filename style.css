@@ -17,7 +17,6 @@ body {
     display: flex;
     justify-content: center;
     animation: opacity 1s ease-in;
-    background: url("./bg.png")
 }
 
 @keyframes opacity {
@@ -62,6 +61,7 @@ body::-webkit-scrollbar-button {
     padding: 2rem;
     max-width: 1500px;
     margin: 0 auto;
+    background: url("./bg.png");
 }
 
 h1 {
@@ -440,4 +440,5 @@ article.active {
         height: 2px;
     }
 }
+
 
